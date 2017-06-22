@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1498120381 source:c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\main.cpp
+	<iostream>
+	<coda.h>
+
+1498120744 source:c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498120450 c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498120803 source:c:\users\alberto\desktop\prog\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498120450 c:\users\alberto\desktop\prog\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498126866 source:c:\users\alberto\desktop\prog\main.cpp
+	<iostream>
+	<coda.h>
+
