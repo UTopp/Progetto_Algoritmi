@@ -18,6 +18,8 @@ class Question
         void setQuestionID(int);
         void setNumberOfAnswers(int);
         void setNextQuestions(int);
+
+        int getQuestionID();
         int getAnswer();
 
 

@@ -29,3 +29,12 @@ void Question::setNumberOfAnswers(int n)
     n = _number_of_answers;
 }
 
+int Question::getQuestionID()
+{
+    return _id;
+}
+
+void Question::getAnswer(int n)
+{
+
+}
