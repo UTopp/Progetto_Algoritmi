@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    coda c;
+    Coda c;
     c.initializeSequence();
     c.removeFirstQuestion();
     c.addNewQuestion(11);

@@ -5,28 +5,28 @@
 #include <string>
 using namespace std;
 
-coda::coda()
+Coda::Coda()
 {
     //initializeSequence();
 
 }
 
-coda::~coda()
+Coda::~Coda()
 {
     //dtor
 }
-void coda::removeFirstQuestion(){
+void Coda::removeFirstQuestion(){
 
             sequence.erase(sequence.begin());
 
 }
 
-void coda::addNewQuestion(int num){
+void Coda::addNewQuestion(int num){
         it= sequence.begin();
         sequence.insert(it, num);
 }
 
-void coda::initializeSequence(){
+void Coda::initializeSequence(){
     cout << "Insert sequence file:" << endl;
     cin >> _starting_file_name;
     _starting_file.open(_starting_file_name.c_str());
@@ -45,7 +45,7 @@ void coda::initializeSequence(){
     }
 };
 
-void coda::printSequence(){
+void Coda::printSequence(){
     it = sequence.begin();
     for (; it != sequence.end(); it++){
         cout << (*it)++ << " ";
