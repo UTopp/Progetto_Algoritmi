@@ -32,7 +32,6 @@ class AllQuestions
         int _counter;
         string _aid;
         string _temp;
-
 };
 
 #endif // ALLQUESTIONS_H

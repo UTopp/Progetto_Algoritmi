@@ -34,8 +34,10 @@ void AllQuestions::initializeList()
                             if (_aid.compare("[Q]") == 0) {
                                 getline(_starting_file, _temp, ' ');
                                     Question x;
-                                    x._id
-
+                                    int t = atoi(_temp.c_str());
+                                    x.setQuestionID(t);
+                                getline(_starting_file, _temp, '\n');
+                                    x.setQuestionText(_temp);
 
 
                                     it = questions.begin();
