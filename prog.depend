@@ -76,12 +76,24 @@
 	<ctype.h>
 	<string>
 
-1498210512 source:c:\users\umberto\documents\github\progetto_algoritmi\src\question.cpp
+1498211275 source:c:\users\umberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
 
-1498211210 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
+1498211517 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
 	<vector>
 	<iterator>
 	<algorithm>
+
+1498211656 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+	"AllQuestions.h"
+
+1498212167 c:\users\umberto\documents\github\progetto_algoritmi\include\allquestions.h
+	<iostream>
+	<list>
+	"question.h"
 
