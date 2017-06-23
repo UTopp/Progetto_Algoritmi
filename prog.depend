@@ -59,3 +59,29 @@
 	<iterator>
 	<algorithm>
 
+1498208440 source:c:\users\umberto\documents\github\progetto_algoritmi\main.cpp
+	<iostream>
+	<coda.h>
+
+1498208438 c:\users\umberto\documents\github\progetto_algoritmi\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498208437 source:c:\users\umberto\documents\github\progetto_algoritmi\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498210184 source:c:\users\umberto\documents\github\progetto_algoritmi\src\question.cpp
+	"Question.h"
+
+1498210184 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+

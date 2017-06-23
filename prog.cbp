@@ -35,7 +35,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Question.h" />
-		<Unit filename="include/Questions.h" />
 		<Unit filename="include/coda.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Question.cpp" />
