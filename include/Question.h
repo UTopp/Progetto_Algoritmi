@@ -19,7 +19,9 @@ class Question
         void setNumberOfAnswers(int);
         void setNextQuestions(int);
 
+        string getQuestionText();
         int getQuestionID();
+        int getNumberOfAnswers();
         int getAnswer();
 
 
