@@ -49,3 +49,6 @@ Temporary Items
 *.o
 *.depend
 *.layout
+prog.layout
+*.layout
+*.layout
