@@ -2,6 +2,7 @@
 #define QUESTION_H
 
 #include <string>
+#include <list>
 #include <vector>
 #include <iterator>
 #include <algorithm>

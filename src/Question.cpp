@@ -14,3 +14,8 @@ Question::~Question()
 {
     //dtor
 }
+
+ void Question::setQuestionText(string text)
+{
+    _question_text = text;
+}

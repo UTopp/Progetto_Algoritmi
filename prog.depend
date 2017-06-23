@@ -83,8 +83,9 @@
 	<ctype.h>
 	<string>
 
-1498213297 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
+1498215150 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
+	<list>
 	<vector>
 	<iterator>
 	<algorithm>
