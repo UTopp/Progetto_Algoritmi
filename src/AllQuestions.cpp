@@ -49,10 +49,18 @@ void AllQuestions::initializeList()
                                     questions.insert(it, x);
 
                                 }
-            it++;
+                            else if(_aid.compare("[A]") == 0){
+                                _starting_file.ignore(150,'\n');
+                            }
+                            else {
+                                cerr << "error";
+                            }
+            *it++;
+
     }
     it = questions.begin();
     for (; it != questions.end(); it++){
-            cout << (*it++).getQuestionID() << " " << (*it++).getNumberOfAnswers() << " " << (*it++).getQuestionText() << endl;
+            cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
+
     }
 }
