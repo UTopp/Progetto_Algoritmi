@@ -47,6 +47,5 @@ Temporary Items
 .apdisk
 *.exe
 *.o
-*.o
-*.o
+*.depend
 *.layout
