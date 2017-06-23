@@ -38,10 +38,11 @@ void AllQuestions::initializeList()
                                     x.setQuestionID(t);
                                 getline(_starting_file, _temp, '\n');
                                     x.setQuestionText(_temp);
-
+                                    cout << x.getQuestionID();
 
                                     it = questions.begin();
                                     questions.insert(it, x);
+
 
                     }
 

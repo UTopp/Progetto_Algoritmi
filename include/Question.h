@@ -20,7 +20,7 @@ class Question
         void setNextQuestions(int);
 
         int getQuestionID();
-        int getAnswer();
+
 
 
     protected:

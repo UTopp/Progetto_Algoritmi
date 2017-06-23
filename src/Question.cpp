@@ -21,12 +21,12 @@ Question::~Question()
 }
 void Question::setQuestionID(int n)
 {
-    n = _id;
+    _id = n;
 }
 
 void Question::setNumberOfAnswers(int n)
 {
-    n = _number_of_answers;
+    _number_of_answers = n;
 }
 
 int Question::getQuestionID()
@@ -34,7 +34,3 @@ int Question::getQuestionID()
     return _id;
 }
 
-void Question::getAnswer(int n)
-{
-
-}
