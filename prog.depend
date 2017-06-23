@@ -52,15 +52,16 @@
 	<Question.h>
 	<AllQuestions.h>
 
-1498211625 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+1498223741 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
 
-1498211625 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+1498224023 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
+	<list>
 	<vector>
 	<iterator>
 	<algorithm>
@@ -104,12 +105,15 @@
 	<list>
 	"question.h"
 
-1498212949 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1498223452 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
+	<vector>
+	<iterator>
+	<algorithm>
 
 1498222969 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
 	<string>

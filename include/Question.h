@@ -24,13 +24,13 @@ class Question
     protected:
 
     private:
-
         string _question_text;
         int _id;
         int _number_of_answers;
         list<int> _possible_answers_id;
         vector<int> _next_questions;
         vector<int>::iterator it;
+
 };
 
 #endif // QUESTION_H

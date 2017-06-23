@@ -33,8 +33,13 @@ void AllQuestions::initializeList()
                 getline(_starting_file, _aid,' '); // Legge la prima lettera
                             if (_aid.compare("[Q]") == 0) {
                                 getline(_starting_file, _temp, ' ');
+                                    Question x;
+                                    x._id
+
+
+
                                     it = questions.begin();
-                                    questions.insert(it, _temp);
+                                    questions.insert(it, x);
 
                     }
 

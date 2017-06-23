@@ -19,7 +19,7 @@ Question::~Question()
 {
     _question_text = text;
 }
-void Question::setQuestionID(int n);
+void Question::setQuestionID(int n)
 {
     n = _id;
 }
