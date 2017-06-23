@@ -19,17 +19,33 @@ Question::~Question()
 {
     _question_text = text;
 }
+
 void Question::setQuestionID(int n)
 {
-    n = _id;
+    _id = n;
 }
 
 void Question::setNumberOfAnswers(int n)
 {
-    n = _number_of_answers;
+     _number_of_answers = n;
 }
 
-string Question::getQuestionText();
+void Question::setNextQuestions(vector<int> v)
+{
+    _next_questions = v;
+}
+
+void Question::setAnswer(int n)
+{
+    _given_answer = n;
+}
+
+void setPossibleAnswers(list<int> l)
+{
+    //_possible_answers = l;
+}
+
+string Question::getQuestionText()
 {
     return _question_text;
 }
@@ -44,7 +60,7 @@ int Question::getNumberOfAnswers()
     return _number_of_answers;
 }
 
-void Question::getAnswer(int n)
+int Question::getAnswer()
 {
-
+    return _given_answer;
 }

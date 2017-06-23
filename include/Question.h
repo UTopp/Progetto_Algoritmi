@@ -17,7 +17,8 @@ class Question
         void setQuestionText(string);
         void setQuestionID(int);
         void setNumberOfAnswers(int);
-        void setNextQuestions(int);
+        void setNextQuestions(vector<int>);
+        void setAnswer(int);
 
         string getQuestionText();
         int getQuestionID();
@@ -31,7 +32,6 @@ class Question
         string _question_text;
         int _id;
         int _number_of_answers;
-        list<int> _possible_answers_id;
         vector<int> _next_questions;
         vector<int>::iterator it;
 
