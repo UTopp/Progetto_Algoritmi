@@ -7,11 +7,11 @@
 
 using namespace std;
 
-class coda
+class Coda
 {
     public:
-        coda();
-        virtual ~coda();
+        Coda();
+        virtual ~Coda();
         void initializeSequence();
         void printSequence();
         void addNewQuestion(int num);
