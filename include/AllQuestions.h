@@ -1,20 +1,38 @@
 #ifndef ALLQUESTIONS_H
 #define ALLQUESTIONS_H
-
+#include <string>
+#include <vector>
+#include <iterator>
+#include <algorithm>
 #include <iostream>
 #include <list>
-#include "question.h"
+#include <fstream>
+#include <string>
+#include <vector>
+#include <iterator>
+#include <algorithm>
 
+#include "question.h"
+using namespace std;
 
 class AllQuestions
 {
     public:
         AllQuestions();
         virtual ~AllQuestions();
-        std::list<Question> questions;
+        list<Question> questions;
+        vector<int> sequence;
+        list<Question>::iterator it;
+        void initializeList();
 
     protected:
     private:
+        string _starting_file_name;
+        ifstream _starting_file;
+        int _counter;
+        string _aid;
+        string _temp;
+
 };
 
 #endif // ALLQUESTIONS_H

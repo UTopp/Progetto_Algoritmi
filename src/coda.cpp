@@ -34,9 +34,9 @@ void Coda::initializeSequence(){
             cerr<<"ERROR! This file does not exist."<<endl;
             exit(EXIT_FAILURE);
         }
+        int i;
 
     while (!_starting_file.eof()){
-        int i;
 
         _starting_file >> i;
 
