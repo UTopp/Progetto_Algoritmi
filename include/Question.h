@@ -10,7 +10,10 @@ using namespace std;
 
 class Question
 {
-@@ -11,6 +17,12 @@ class Question
+    public:
+    Question();
+    ~Question();
+
     protected:
 
     private:
