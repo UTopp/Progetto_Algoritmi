@@ -19,8 +19,14 @@ class Question
         void setNumberOfAnswers(int);
         void setNextQuestions(int);
 
+        string getQuestionText();
         int getQuestionID();
+<<<<<<< HEAD
 
+=======
+        int getNumberOfAnswers();
+        int getAnswer();
+>>>>>>> 7225fa54859120770a31ec956961804381992ee8
 
 
     protected:
