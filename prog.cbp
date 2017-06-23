@@ -34,8 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Question.h" />
+		<Unit filename="include/Questions.h" />
 		<Unit filename="include/coda.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Question.cpp" />
+		<Unit filename="src/Questions.cpp" />
 		<Unit filename="src/coda.cpp" />
 		<Extensions>
 			<code_completion />

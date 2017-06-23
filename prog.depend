@@ -33,3 +33,29 @@
 	<iostream>
 	<coda.h>
 
+1498207356 source:c:\users\alberto\documents\github\progetto_algoritmi\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498207356 c:\users\alberto\documents\github\progetto_algoritmi\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498207524 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+	<iostream>
+	<coda.h>
+
+1498208266 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+	"Question.h"
+
+1498209572 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+
