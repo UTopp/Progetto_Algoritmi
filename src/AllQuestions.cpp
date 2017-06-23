@@ -28,23 +28,31 @@ void AllQuestions::initializeList()
             exit(EXIT_FAILURE);
         }
 
-    //while (!_starting_file.eof()){
+    while (!_starting_file.eof()){
 
                 getline(_starting_file, _aid,' '); // Legge la prima lettera
-                            if (_aid.compare("[Q]") == 0) {
-                                getline(_starting_file, _temp, ' ');
+                            if (_aid.compare("[Q]") == 0)
+                                {
                                     Question x;
+                                    getline(_starting_file, _temp, ' ');
                                     int t = atoi(_temp.c_str());
                                     x.setQuestionID(t);
-                                getline(_starting_file, _temp, '\n');
+
+                                    getline(_starting_file, _temp, ' ');
+                                    t = atoi(_temp.c_str());
+                                    x.setNumberOfAnswers(t);
+
+                                    getline(_starting_file, _temp, '\n');
                                     x.setQuestionText(_temp);
-                                    cout << x.getQuestionID();
 
                                     it = questions.begin();
                                     questions.insert(it, x);
 
-
-                    }
-
-    //}
+                                }
+            it++;
+    }
+    it = questions.begin();
+    for (; it != questions.end(); it++){
+            cout << (*it++).getQuestionID() << " " << (*it++).getNumberOfAnswers() << " " << (*it++).getQuestionText() << endl;
+    }
 }
