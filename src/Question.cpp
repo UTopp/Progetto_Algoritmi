@@ -3,6 +3,8 @@
 #include <fstream>
 #include <ctype.h>
 #include <string>
+#include <list>
+#include <vector>
 using namespace std;
 
 Question::Question()
@@ -40,9 +42,9 @@ void Question::setAnswer(int n)
     _given_answer = n;
 }
 
-void setPossibleAnswers(list<int> l)
+void Question::setPossibleAnswers(list<int> l)
 {
-    //_possible_answers = l;
+    _possible_answers = l;
 }
 
 string Question::getQuestionText()
