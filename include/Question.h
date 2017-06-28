@@ -14,12 +14,12 @@ class Question
     public:
         Question();
         ~Question();
+
         void setQuestionText(string);
         void setQuestionID(int);
         void setNumberOfAnswers(int);
-        void setNextQuestions(vector<int>);
         void setAnswer(int);
-        void setPossibleAnswers(list<int>);               //I can have 2 or more answers --> list
+        void setNextQuestions(vector<int>);     //vector because it might be more than one question
 
         string getQuestionText();
         int getQuestionID();
@@ -27,15 +27,13 @@ class Question
         int getAnswer();
 
 
-
     protected:
 
     private:
         string _question_text;
-        int _id;
+        int _question_id;
         int _given_answer;
         int _number_of_answers;
-        list<int> _possible_answers;
         vector<int> _next_questions;
         vector<int>::iterator it;
 

@@ -46,20 +46,20 @@
 	<algorithm>
 	<fstream>
 
-1498214567 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+1498226931 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
 	<coda.h>
 	<Question.h>
 	<AllQuestions.h>
 
-1498223741 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+1498226061 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
 
-1498224023 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+1498226061 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
 	<list>
 	<vector>
@@ -105,7 +105,7 @@
 	<list>
 	"question.h"
 
-1498223452 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1498228437 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
 	<iostream>
 	<fstream>
