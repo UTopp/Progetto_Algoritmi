@@ -20,10 +20,13 @@ class AllQuestions
     public:
         AllQuestions();
         virtual ~AllQuestions();
+
+        void initializeList();
+
         list<Question> questions;
         vector<int> sequence;
         list<Question>::iterator it;
-        void initializeList();
+
 
     protected:
     private:
