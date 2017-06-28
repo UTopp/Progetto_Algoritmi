@@ -29,6 +29,11 @@ void Question::setNumberOfAnswers(int n)
     _number_of_answers = n;
 }
 
+void setGivenAnswer(int n)
+{
+    _given_answer = n;
+}
+
 string Question::getQuestionText()
 {
     return _question_text;
