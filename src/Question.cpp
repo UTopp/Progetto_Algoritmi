@@ -37,23 +37,11 @@ void Question::setNextQuestions(vector<int> v)
     _next_questions = v;
 }
 
-<<<<<<< HEAD
-void Question::setGivenAnswer(int n)
-=======
 void Question::setAnswer(int n)
->>>>>>> refs/remotes/origin/master
 {
     _given_answer = n;
 }
 
-<<<<<<< HEAD
-=======
-void Question::setPossibleAnswers(list<int> l)
-{
-    _possible_answers = l;
-}
-
->>>>>>> refs/remotes/origin/master
 string Question::getQuestionText()
 {
     return _question_text;
@@ -64,19 +52,12 @@ int Question::getQuestionID()
     return _id;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
 int Question::getNumberOfAnswers()
 {
     return _number_of_answers;
 }
 
-<<<<<<< HEAD
-=======
 int Question::getAnswer()
 {
     return _given_answer;
 }
->>>>>>> refs/remotes/origin/master
