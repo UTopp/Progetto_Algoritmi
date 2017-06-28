@@ -17,6 +17,8 @@ Question::~Question()
     //dtor
 }
 
+// --- set methods ---
+
  void Question::setQuestionText(string text)
 {
     _question_text = text;
@@ -24,7 +26,7 @@ Question::~Question()
 
 void Question::setQuestionID(int n)
 {
-    _id = n;
+    _question_id = n;
 }
 
 void Question::setNumberOfAnswers(int n)
@@ -42,6 +44,8 @@ void Question::setAnswer(int n)
     _given_answer = n;
 }
 
+// --- get methods ---
+
 string Question::getQuestionText()
 {
     return _question_text;
@@ -49,7 +53,7 @@ string Question::getQuestionText()
 
 int Question::getQuestionID()
 {
-    return _id;
+    return _question_id;
 }
 
 int Question::getNumberOfAnswers()

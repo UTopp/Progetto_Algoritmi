@@ -21,7 +21,6 @@ class Question
         void setAnswer(int);
         void setNextQuestions(vector<int>);     //vector because it might be more than one question
 
-
         string getQuestionText();
         int getQuestionID();
         int getNumberOfAnswers();
@@ -32,7 +31,7 @@ class Question
 
     private:
         string _question_text;
-        int _id;
+        int _question_id;
         int _given_answer;
         int _number_of_answers;
         vector<int> _next_questions;
