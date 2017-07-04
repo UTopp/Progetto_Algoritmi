@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 #include <iterator>
-#include <algorithm>
+
 
 #include "question.h"
 using namespace std;
@@ -24,6 +24,8 @@ class AllQuestions
         vector<int> sequence;
         list<Question>::iterator it;
         void initializeList();
+        void printList();
+
 
     protected:
     private:

@@ -20,7 +20,7 @@ AllQuestions::~AllQuestions()
 }
 void AllQuestions::initializeList()
 {
-        cout << "Insert questions file:" << endl;
+    cout << "Insert questions file:" << endl;
     cin >> _starting_file_name;
     _starting_file.open(_starting_file_name.c_str());
     if (!_starting_file.is_open()) {
@@ -30,7 +30,8 @@ void AllQuestions::initializeList()
 
     while (!_starting_file.eof()){
 
-                getline(_starting_file, _aid,' '); // Legge la prima lettera
+
+                getline(_starting_file, _aid,' '); // Legge la prima lettera della riga
                             if (_aid.compare("[Q]") == 0)
                                 {
                                     Question x;
@@ -45,7 +46,7 @@ void AllQuestions::initializeList()
                                     getline(_starting_file, _temp, '\n');
                                     x.setQuestionText(_temp);
 
-                                    it = questions.begin();
+                                    it = questions.end();
                                     questions.insert(it, x);
 
                                 }
@@ -53,11 +54,16 @@ void AllQuestions::initializeList()
                                 _starting_file.ignore(150,'\n');
                             }
                             else {
-                                cerr << "error";
+                                //cerr << "error";
                             }
-            *it++;
 
     }
+
+ _starting_file.close();
+}
+void AllQuestions::printList()
+
+{
     it = questions.begin();
     for (; it != questions.end(); it++){
             cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;

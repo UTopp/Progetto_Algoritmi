@@ -46,7 +46,7 @@
 	<algorithm>
 	<fstream>
 
-1498226931 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+1498293389 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
 	<coda.h>
 	<Question.h>
@@ -105,7 +105,7 @@
 	<list>
 	"question.h"
 
-1498228437 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1498293346 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
 	<iostream>
 	<fstream>
@@ -115,7 +115,7 @@
 	<iterator>
 	<algorithm>
 
-1498224661 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
+1498293495 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
 	<string>
 	<vector>
 	<iterator>
@@ -126,6 +126,5 @@
 	<string>
 	<vector>
 	<iterator>
-	<algorithm>
 	"question.h"
 
