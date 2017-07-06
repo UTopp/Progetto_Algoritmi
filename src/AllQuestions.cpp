@@ -30,26 +30,26 @@ void AllQuestions::initializeList()
 
     while (!_starting_file.eof()){
 
-                getline(_starting_file, _aid,' '); // Legge la prima lettera
-                            if (_aid.compare("[Q]") == 0)
+                getline(_starting_file, _text_file,' ');
+                            if (_text_file.compare("[Q]") == 0)
                                 {
                                     Question x;
-                                    getline(_starting_file, _temp, ' ');
-                                    int t = atoi(_temp.c_str());
+                                    getline(_starting_file, _text_file, ' ');
+                                    int t = atoi(_text_file.c_str());
                                     x.setQuestionID(t);
 
-                                    getline(_starting_file, _temp, ' ');
-                                    t = atoi(_temp.c_str());
+                                    getline(_starting_file, _text_file, ' ');
+                                    t = atoi(_text_file.c_str());
                                     x.setNumberOfAnswers(t);
 
-                                    getline(_starting_file, _temp, '\n');
-                                    x.setQuestionText(_temp);
+                                    getline(_starting_file, _text_file, '\n');
+                                    x.setQuestionText(_text_file);
 
                                     it = questions.begin();
                                     questions.insert(it, x);
 
                                 }
-                            else if(_aid.compare("[A]") == 0){
+                            else if(_text_file.compare("[A]") == 0){
                                 _starting_file.ignore(150,'\n');
                             }
                             else {
