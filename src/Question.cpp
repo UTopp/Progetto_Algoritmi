@@ -36,12 +36,12 @@ void Question::setNumberOfAnswers(int n)
 
 void Question::setNextQuestions(vector<int> v)
 {
-    _next_questions = v;
+    _next_questions.push_back(v);
 }
 
 void Question::setAnswer(int n)
 {
-    _given_answer = n;
+    _answers_id.push_back(n);
 }
 
 // --- get methods ---
@@ -59,9 +59,4 @@ int Question::getQuestionID()
 int Question::getNumberOfAnswers()
 {
     return _number_of_answers;
-}
-
-int Question::getAnswer()
-{
-    return _given_answer;
 }

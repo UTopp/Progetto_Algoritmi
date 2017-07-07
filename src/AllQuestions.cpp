@@ -1,5 +1,4 @@
 #include "AllQuestions.h"
-#include "NextAnswer.h"
 #include <iostream>
 #include <fstream>
 #include <ctype.h>
@@ -25,7 +24,6 @@ void AllQuestions::initializeList()
     int t, length;
     char buffer[10];
     string temp_str;
-    NextAnswer temp_nextanswer;
 
     cout << "Insert questions file:" << endl;
     cin >> _starting_file_name;
@@ -69,10 +67,6 @@ void AllQuestions::initializeList()
 
                                 _text_file.erase(0, length+1);
                                 t = atoi(buffer);
-                                temp_nextanswer.setAnswerID(t);
-
-
-
                                 cout << "answer id: " << t << endl;
 
                                 //cout << t << " ";
@@ -89,7 +83,6 @@ void AllQuestions::initializeList()
                                     buffer[length]= '\0';
                                     _text_file.erase(0, length+1);
                                     t = atoi(buffer);
-                                    temp_nextanswer.setNextQuestion(t);
 
 
                                     cout << "    next question: " << t << endl;

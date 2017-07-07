@@ -32,10 +32,11 @@ class Question
     private:
         string _question_text;
         int _question_id;
-        int _given_answer;
         int _number_of_answers;
-        vector<int> _next_questions;
-        vector<int>::iterator it;
+        vector<int> _answers_id;
+        vector< vector <int> > _next_questions;
+        vector<int>::iterator _it_answers;
+        vector< vector<int> >::iterator _it_questions;
 
 };
 
