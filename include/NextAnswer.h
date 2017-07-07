@@ -1,5 +1,5 @@
-#ifndef ANSWER_H
-#define ANSWER_H
+#ifndef NEXTANSWER_H
+#define NEXTANSWER_H
 
 #include <vector>
 
@@ -11,11 +11,11 @@ using namespace std;
                 if the answer is equal to _answer_id
 */
 
-class Answer
+class NextAnswer
 {
     public:
-        Answer();
-        virtual ~Answer();
+        NextAnswer();
+        virtual ~NextAnswer();
 
         void setAnswerID(int);
         void setNextQuestions(vector<int>);
@@ -29,4 +29,4 @@ class Answer
         vector<int> _next_questions;
 };
 
-#endif // ANSWER_H
+#endif // NEXTANSWER_H

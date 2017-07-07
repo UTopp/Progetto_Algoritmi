@@ -3,7 +3,7 @@
 #include"coda.h"
 #include"Question.h"
 #include"AllQuestions.h"
-#include"Answer.h"
+#include"NextAnswer.h"
 
 using namespace std;
 
