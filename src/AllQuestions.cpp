@@ -75,11 +75,11 @@ void AllQuestions::initializeList()
 
                                 cout << "answer id: " << t << endl;
 
-                                cout << t << " ";
+                                //cout << t << " ";
 
 
-                                cout << "-" << _text_file << "-" << endl;
-                                cout << "_text_file length: " << _text_file.length() << endl;
+                                //cout << "-" << _text_file << "-" << endl;
+                                //cout << "_text_file length: " << _text_file.length() << endl;
 
                                 while(_text_file.length() !=0 && _text_file.find(' ') != -1 )
                                 {
@@ -92,16 +92,16 @@ void AllQuestions::initializeList()
                                     temp_nextanswer.setNextQuestion(t);
 
 
-                                    cout << "next question: " << t << endl;
+                                    cout << "    next question: " << t << endl;
 
 
 
-                                    cout << "_text_file length: " << _text_file.length() << endl;
+                                    //cout << "_text_file length: " << _text_file.length() << endl;
                                     //cout << _text_file.find(' ') << endl;
-                                    cout << endl;
+
 
                                 }
-                                      cout << endl << endl;
+                                        cout << endl;
                                 }
 
 
@@ -109,8 +109,9 @@ void AllQuestions::initializeList()
                             {
                                 cerr << "error";
                             }
+
             *it++;
-            cout << endl;
+            //cout << endl;
 
     }
     _starting_file.close();
