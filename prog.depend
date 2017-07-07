@@ -1,47 +1,37 @@
 # depslib dependency file v1.0
-1499426124 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+1498120381 source:c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\main.cpp
 	<iostream>
+	<coda.h>
+
+1498120744 source:c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\src\coda.cpp
 	"coda.h"
-	"Question.h"
-	"AllQuestions.h"
-	"Answer.h"
-
-1498210006 c:\users\alberto\documents\github\progetto_algoritmi\include\coda.h
-	<vector>
-	<iterator>
-	<algorithm>
-	<fstream>
-
-1499158145 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
-	<string>
-	<list>
-	<vector>
-	<iterator>
-	<algorithm>
-
-1499426104 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
-	<iostream>
-	<list>
-	<fstream>
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
-	"Question.h"
-
-1499426104 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
-	"AllQuestions.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
+
+1498120450 c:\users\alberto\desktop\paolo\tendenzialmente\programmi info\prog\include\coda.h
 	<vector>
 	<iterator>
 	<algorithm>
+	<fstream>
+
+1498120803 source:c:\users\alberto\desktop\prog\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498120450 c:\users\alberto\desktop\prog\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498126866 source:c:\users\alberto\desktop\prog\main.cpp
+	<iostream>
+	<coda.h>
 
 1498213429 source:c:\users\alberto\documents\github\progetto_algoritmi\src\coda.cpp
 	"coda.h"
@@ -50,94 +40,92 @@
 	<ctype.h>
 	<string>
 
-1499158145 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+1498210006 c:\users\alberto\documents\github\progetto_algoritmi\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498226931 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+	<iostream>
+	<coda.h>
+	<Question.h>
+	<AllQuestions.h>
+
+1498226061 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
+
+1498226061 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+	<string>
 	<list>
 	<vector>
-
-1499425137 c:\users\alberto\documents\github\progetto_algoritmi\include\answer.h
-	<string>
-
-1499425232 source:c:\users\alberto\documents\github\progetto_algoritmi\src\answer.cpp
-	"Answer.h"
-
-1499425278 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allanswers.cpp
-	"AllAnswers.h"
-
-1499426010 c:\users\alberto\documents\github\progetto_algoritmi\include\allanswers.h
-	<string>
-	<fstream>
 	<iterator>
-	<list>
-	"Answer.h"
+	<algorithm>
 
-1499426124 source:c:\users\alberto\desktop\progetto_algoritmi\main.cpp
+1498208440 source:c:\users\umberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
-	"coda.h"
-	"Question.h"
-	"AllQuestions.h"
-	"Answer.h"
+	<coda.h>
 
-1498210006 c:\users\alberto\desktop\progetto_algoritmi\include\coda.h
+1498208438 c:\users\umberto\documents\github\progetto_algoritmi\include\coda.h
 	<vector>
 	<iterator>
 	<algorithm>
 	<fstream>
 
-1499158145 c:\users\alberto\desktop\progetto_algoritmi\include\question.h
-	<string>
-	<list>
-	<vector>
-	<iterator>
-	<algorithm>
-
-1499426104 c:\users\alberto\desktop\progetto_algoritmi\include\allquestions.h
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
-	<iostream>
-	<list>
-	<fstream>
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
-	"Question.h"
-
-1499425137 c:\users\alberto\desktop\progetto_algoritmi\include\answer.h
-	<string>
-
-1499426589 source:c:\users\alberto\desktop\progetto_algoritmi\src\allquestions.cpp
-	"AllQuestions.h"
-	<iostream>
-	<fstream>
-	<ctype.h>
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
-
-1499425232 source:c:\users\alberto\desktop\progetto_algoritmi\src\answer.cpp
-	"Answer.h"
-
-1498213429 source:c:\users\alberto\desktop\progetto_algoritmi\src\coda.cpp
+1498208437 source:c:\users\umberto\documents\github\progetto_algoritmi\src\coda.cpp
 	"coda.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
 
-1499158145 source:c:\users\alberto\desktop\progetto_algoritmi\src\question.cpp
+1498211275 source:c:\users\umberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
 	<string>
+
+1498215150 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
+	<string>
 	<list>
 	<vector>
+	<iterator>
+	<algorithm>
+
+1498211656 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+	"AllQuestions.h"
+
+1498212167 c:\users\umberto\documents\github\progetto_algoritmi\include\allquestions.h
+	<iostream>
+	<list>
+	"question.h"
+
+1498228437 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+	"AllQuestions.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+
+1498224661 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+	<iostream>
+	<list>
+	<fstream>
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+	"question.h"
 
