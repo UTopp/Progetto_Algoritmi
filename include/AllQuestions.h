@@ -22,15 +22,14 @@ class AllQuestions
         virtual ~AllQuestions();
 
         void initializeList();
+        void printList();
 
         list<Question> questions;
         vector<int> sequence;
         list<Question>::iterator it;
-<<<<<<< HEAD
-=======
-        void initializeList();
-        void printList();
->>>>>>> origin/allquestions
+
+
+
 
 
     protected:
