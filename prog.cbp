@@ -36,11 +36,13 @@
 		</Compiler>
 		<Unit filename="include/AllQuestions.h" />
 		<Unit filename="include/Answer.h" />
+		<Unit filename="include/NextAnswer.h" />
 		<Unit filename="include/Question.h" />
 		<Unit filename="include/coda.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AllQuestions.cpp" />
 		<Unit filename="src/Answer.cpp" />
+		<Unit filename="src/NextAnswer.cpp" />
 		<Unit filename="src/Question.cpp" />
 		<Unit filename="src/coda.cpp" />
 		<Extensions>

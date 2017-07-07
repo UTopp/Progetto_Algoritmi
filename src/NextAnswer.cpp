@@ -1,4 +1,5 @@
 #include "NextAnswer.h"
+#include <vector>
 
 NextAnswer::NextAnswer()
 {
@@ -13,6 +14,11 @@ NextAnswer::~NextAnswer()
 void NextAnswer::setAnswerID(int n)
 {
     _answer_id = n;
+}
+
+void NextAnswer::setNextQuestion(int n)
+{
+    _next_questions.push_back(n);
 }
 
 void NextAnswer::setNextQuestions(vector<int> v)

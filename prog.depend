@@ -141,3 +141,76 @@
 	<list>
 	<vector>
 
+1499430609 source:c:\users\umberto\documents\github\progetto_algoritmi\main.cpp
+	<iostream>
+	"coda.h"
+	"Question.h"
+	"AllQuestions.h"
+	"Answer.h"
+
+1498208438 c:\users\umberto\documents\github\progetto_algoritmi\include\coda.h
+	<vector>
+	<iterator>
+	<algorithm>
+	<fstream>
+
+1498687215 c:\users\umberto\documents\github\progetto_algoritmi\include\question.h
+	<string>
+	<list>
+	<vector>
+	<iterator>
+	<algorithm>
+
+1499430609 c:\users\umberto\documents\github\progetto_algoritmi\include\allquestions.h
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+	<iostream>
+	<list>
+	<fstream>
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+	"Question.h"
+
+1499430609 c:\users\umberto\documents\github\progetto_algoritmi\include\answer.h
+	<string>
+
+1498223483 source:c:\users\umberto\documents\github\progetto_algoritmi\src\coda.cpp
+	"coda.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+
+1498687215 source:c:\users\umberto\documents\github\progetto_algoritmi\src\question.cpp
+	"Question.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+	<list>
+	<vector>
+
+1499430609 source:c:\users\umberto\documents\github\progetto_algoritmi\src\answer.cpp
+	"Answer.h"
+
+	"AllQuestions.h"
+	"NextAnswer.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
+
+1499431973 c:\users\umberto\documents\github\progetto_algoritmi\include\nextanswer.h
+	<vector>
+
+1499432211 source:c:\users\umberto\documents\github\progetto_algoritmi\src\nextanswer.cpp
+	"NextAnswer.h"
+	<vector>
+

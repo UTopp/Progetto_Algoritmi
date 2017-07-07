@@ -1,4 +1,5 @@
 #include "AllQuestions.h"
+#include "NextAnswer.h"
 #include <iostream>
 #include <fstream>
 #include <ctype.h>
@@ -21,7 +22,12 @@ AllQuestions::~AllQuestions()
 }
 void AllQuestions::initializeList()
 {
-        cout << "Insert questions file:" << endl;
+    int t, length;
+    char buffer[10];
+    string temp_str;
+    NextAnswer temp_nextanswer;
+
+    cout << "Insert questions file:" << endl;
     cin >> _starting_file_name;
     _starting_file.open(_starting_file_name.c_str());
     if (!_starting_file.is_open()) {
@@ -36,7 +42,7 @@ void AllQuestions::initializeList()
                                 {
                                     Question x;
                                     getline(_starting_file, _text_file, ' ');
-                                    int t = atoi(_text_file.c_str());
+                                    t = atoi(_text_file.c_str());
                                     x.setQuestionID(t);
 
                                     getline(_starting_file, _text_file, ' ');
@@ -50,10 +56,37 @@ void AllQuestions::initializeList()
                                     questions.insert(it, x);
 
                                 }
-                            else if(_text_file.compare("[A]") == 0){
-                                _starting_file.ignore(150,'\n');
+                            else if(_text_file.compare("[A]") == 0)
+                            {
+                                getline(_starting_file, _text_file, '\n');
+
+                                length = _text_file.find(' ');
+                                _text_file.copy(buffer, length, 0);
+                                buffer[length]= '\0';
+                                _text_file.erase(0, length+1);
+                                t = atoi(buffer);
+                                temp_nextanswer.setAnswerID(t);
+
+                                cout << "answer id: " << t << endl;
+
+
+                                while(_text_file.length() != 0 && _text_file.find(' ') != -1)
+                                {
+                                    length = _text_file.find(' ');
+                                    _text_file.copy(buffer, length, 0);
+                                    buffer[length]= '\0';
+                                    _text_file.erase(0, length+1);
+                                    t = atoi(buffer);
+                                    temp_nextanswer.setNextQuestion(t);
+
+                                    cout << "next question: " << t << endl;
+                                    cout << "_text_file length: " << _text_file.length() << endl;
+                                    cout << _text_file.find(' ') << endl;
+                                }
+
                             }
-                            else {
+                            else
+                            {
                                 cerr << "error";
                             }
             *it++;
@@ -62,12 +95,13 @@ void AllQuestions::initializeList()
     _starting_file.close();
 
 }
-void AllQuestions::printList(){
-
+void AllQuestions::printList()
+{
     it = questions.begin();
-        for (; it != questions.end(); it++){
-                cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
-
-        }
+    /*
+    for (; it != questions.end(); it++)
+    {
+        cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
+    } */
 
 }

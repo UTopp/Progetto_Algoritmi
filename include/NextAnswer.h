@@ -18,6 +18,7 @@ class NextAnswer
         virtual ~NextAnswer();
 
         void setAnswerID(int);
+        void setNextQuestion(int);
         void setNextQuestions(vector<int>);
 
         int getAnswerID();
