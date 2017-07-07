@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 #include <iterator>
-
+#include <algorithm>
 
 #include "Question.h"
 
@@ -40,15 +40,13 @@ class AllQuestions
         list<Question>::iterator it;
 
 
-
-
-
     protected:
     private:
         string _starting_file_name;
         ifstream _starting_file;
         int _counter;
-        string _text_file;
+
+        string _text_file; // support variable to momentarily save the text read from the file
 };
 
 #endif // ALLQUESTIONS_H

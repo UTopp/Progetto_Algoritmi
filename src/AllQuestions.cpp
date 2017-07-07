@@ -12,6 +12,7 @@ using namespace std;
 AllQuestions::AllQuestions()
 {
     _counter = 0;
+
 }
 
 AllQuestions::~AllQuestions()
@@ -20,7 +21,7 @@ AllQuestions::~AllQuestions()
 }
 void AllQuestions::initializeList()
 {
-    cout << "Insert questions file:" << endl;
+        cout << "Insert questions file:" << endl;
     cin >> _starting_file_name;
     _starting_file.open(_starting_file_name.c_str());
     if (!_starting_file.is_open()) {
@@ -30,43 +31,43 @@ void AllQuestions::initializeList()
 
     while (!_starting_file.eof()){
 
-
-                getline(_starting_file, _aid,' '); // Legge la prima lettera della riga
-                            if (_aid.compare("[Q]") == 0)
+                getline(_starting_file, _text_file,' ');
+                            if (_text_file.compare("[Q]") == 0)
                                 {
                                     Question x;
-                                    getline(_starting_file, _temp, ' ');
-                                    int t = atoi(_temp.c_str());
+                                    getline(_starting_file, _text_file, ' ');
+                                    int t = atoi(_text_file.c_str());
                                     x.setQuestionID(t);
 
-                                    getline(_starting_file, _temp, ' ');
-                                    t = atoi(_temp.c_str());
+                                    getline(_starting_file, _text_file, ' ');
+                                    t = atoi(_text_file.c_str());
                                     x.setNumberOfAnswers(t);
 
-                                    getline(_starting_file, _temp, '\n');
-                                    x.setQuestionText(_temp);
+                                    getline(_starting_file, _text_file, '\n');
+                                    x.setQuestionText(_text_file);
 
                                     it = questions.end();
                                     questions.insert(it, x);
 
                                 }
-                            else if(_aid.compare("[A]") == 0){
+                            else if(_text_file.compare("[A]") == 0){
                                 _starting_file.ignore(150,'\n');
                             }
                             else {
-                                //cerr << "error";
+                                cerr << "error";
                             }
+            *it++;
 
     }
+    _starting_file.close();
 
- _starting_file.close();
 }
-void AllQuestions::printList()
+void AllQuestions::printList(){
 
-{
     it = questions.begin();
-    for (; it != questions.end(); it++){
-            cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
+        for (; it != questions.end(); it++){
+                cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
 
-    }
+        }
+
 }

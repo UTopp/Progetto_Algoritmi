@@ -3,7 +3,7 @@
 #include"coda.h"
 #include"Question.h"
 #include"AllQuestions.h"
-#include"NextAnswer.h"
+#include"Answer.h"
 
 using namespace std;
 
@@ -20,6 +20,7 @@ int main()
     */
 
     q.initializeList();
+    q.printList();
 
     return 0;
 }
