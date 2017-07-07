@@ -1,7 +1,10 @@
 #include <iostream>
-#include<coda.h>
-#include<Question.h>
-#include<AllQuestions.h>
+
+#include"coda.h"
+#include"Question.h"
+#include"AllQuestions.h"
+#include"NextAnswer.h"
+
 using namespace std;
 
 int main()

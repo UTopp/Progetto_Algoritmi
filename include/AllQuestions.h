@@ -12,8 +12,19 @@
 #include <iterator>
 
 
-#include "question.h"
+#include "Question.h"
+
 using namespace std;
+
+/*
+    Desc:   Holds a copy of all the questions and the list (Coda) of questions in the order they will have to be
+            asked to the user.
+    AllQuestions object:
+            -> questions:   list that contains Question objects
+            -> sequence:    STILL IN DEVELOPMENT it should contain the ordered list
+                            of questions to ask the user. it might become a Coda object
+            -> _text_file:  support variable to momentarily save the text read from the file
+*/
 
 class AllQuestions
 {
@@ -37,8 +48,7 @@ class AllQuestions
         string _starting_file_name;
         ifstream _starting_file;
         int _counter;
-        string _aid;
-        string _temp;
+        string _text_file;
 };
 
 #endif // ALLQUESTIONS_H
