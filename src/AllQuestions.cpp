@@ -48,6 +48,7 @@ void AllQuestions::initializeList()
                                     getline(_starting_file, _text_file, ' ');
                                     t = atoi(_text_file.c_str());
                                     x.setNumberOfAnswers(t);
+                                    _number_of_answers = t;
 
                                     getline(_starting_file, _text_file, '\n');
                                     x.setQuestionText(_text_file);
@@ -60,18 +61,25 @@ void AllQuestions::initializeList()
                             {
                                 getline(_starting_file, _text_file, '\n');
 
+
                                 length = _text_file.find(' ');
                                 _text_file.copy(buffer, length, 0);
                                 buffer[length]= '\0';
+
                                 _text_file.erase(0, length+1);
                                 t = atoi(buffer);
                                 temp_nextanswer.setAnswerID(t);
 
+                                _text_file+= ' ';
+
                                 cout << "answer id: " << t << endl;
 
+                                cout << "-" << _text_file << "-" << endl;
+                                cout << "_text_file length: " << _text_file.length() << endl;
 
-                                while(_text_file.length() != 0 && _text_file.find(' ') != -1)
+                                while(_text_file.length() !=0 && _text_file.find(' ') != -1 )
                                 {
+
                                     length = _text_file.find(' ');
                                     _text_file.copy(buffer, length, 0);
                                     buffer[length]= '\0';
@@ -79,11 +87,17 @@ void AllQuestions::initializeList()
                                     t = atoi(buffer);
                                     temp_nextanswer.setNextQuestion(t);
 
-                                    cout << "next question: " << t << endl;
-                                    cout << "_text_file length: " << _text_file.length() << endl;
-                                    cout << _text_file.find(' ') << endl;
-                                }
 
+                                    cout << "next question: " << t << endl;
+
+
+
+                                    cout << "_text_file length: " << _text_file.length() << endl;
+                                    //cout << _text_file.find(' ') << endl;
+                                    cout << endl;
+
+                                }
+                                cout << endl << endl << endl;
                             }
                             else
                             {

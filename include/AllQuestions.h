@@ -45,7 +45,7 @@ class AllQuestions
         string _starting_file_name;
         ifstream _starting_file;
         int _counter;
-
+        int _number_of_answers;
         string _text_file; // support variable to momentarily save the text read from the file
 };
 

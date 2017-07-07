@@ -19,7 +19,7 @@
 	<iterator>
 	<algorithm>
 
-1499426104 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
+1499438065 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
 	<string>
 	<vector>
 	<iterator>
@@ -33,8 +33,9 @@
 	<algorithm>
 	"Question.h"
 
-1499426104 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1499443658 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
+	"NextAnswer.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
@@ -196,7 +197,6 @@
 
 1499430609 source:c:\users\umberto\documents\github\progetto_algoritmi\src\answer.cpp
 	"Answer.h"
-
 	"AllQuestions.h"
 	"NextAnswer.h"
 	<iostream>
@@ -212,5 +212,12 @@
 
 1499432211 source:c:\users\umberto\documents\github\progetto_algoritmi\src\nextanswer.cpp
 	"NextAnswer.h"
+	<vector>
+
+1499435113 source:c:\users\alberto\documents\github\progetto_algoritmi\src\nextanswer.cpp
+	"NextAnswer.h"
+	<vector>
+
+1499435113 c:\users\alberto\documents\github\progetto_algoritmi\include\nextanswer.h
 	<vector>
 
