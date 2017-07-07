@@ -59,6 +59,7 @@ void AllQuestions::initializeList()
                             else if(_text_file.compare("[A]") == 0)
                             {
                                 getline(_starting_file, _text_file, '\n');
+                                _text_file.push_back(' ');
 
                                 length = _text_file.find(' ');
                                 _text_file.copy(buffer, length, 0);
@@ -67,7 +68,7 @@ void AllQuestions::initializeList()
                                 t = atoi(buffer);
                                 temp_nextanswer.setAnswerID(t);
 
-                                cout << "answer id: " << t << endl;
+                                cout << t << " ";
 
 
                                 while(_text_file.length() != 0 && _text_file.find(' ') != -1)
@@ -79,17 +80,15 @@ void AllQuestions::initializeList()
                                     t = atoi(buffer);
                                     temp_nextanswer.setNextQuestion(t);
 
-                                    cout << "next question: " << t << endl;
-                                    cout << "_text_file length: " << _text_file.length() << endl;
-                                    cout << _text_file.find(' ') << endl;
+                                    cout << t << " ";
                                 }
-
                             }
                             else
                             {
                                 cerr << "error";
                             }
             *it++;
+            cout << endl;
 
     }
     _starting_file.close();
