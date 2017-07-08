@@ -23,88 +23,67 @@ void AllQuestions::initializeList()
 {
     int t, length;
     char buffer[10];
-    string temp_str;
+    Question x;
+    vector<int> temp_vector;
 
     cout << "Insert questions file:" << endl;
     cin >> _starting_file_name;
     _starting_file.open(_starting_file_name.c_str());
-    if (!_starting_file.is_open()) {
-            cerr<<"ERROR! This file does not exist."<<endl;
-            exit(EXIT_FAILURE);
+    if (!_starting_file.is_open())
+    {
+        cerr<<"ERROR! This file does not exist."<<endl;
+        exit(EXIT_FAILURE);
+    }
+
+    while (!_starting_file.eof())
+    {
+        getline(_starting_file, _text_file,' ');
+        if (_text_file.compare("[Q]") == 0)
+        {
+            getline(_starting_file, _text_file, ' ');
+            t = atoi(_text_file.c_str());
+            x.setQuestionID(t);
+
+            getline(_starting_file, _text_file, ' ');
+            t = atoi(_text_file.c_str());
+            x.setNumberOfAnswers(t);
+            _number_of_answers = t;         // ???
+
+            getline(_starting_file, _text_file, '\n');
+            x.setQuestionText(_text_file);
+
+        }
+        else if(_text_file.compare("[A]") == 0)
+        {
+
+            getline(_starting_file, _text_file, '\n');
+            _text_file.push_back(' ');
+            length = _text_file.find(' ');
+            _text_file.copy(buffer, length, 0);
+            buffer[length]= '\0';
+            _text_file.erase(0, length+1);
+            t = atoi(buffer);
+            x.setAnswer(t);
+
+            while(_text_file.length() !=0)
+            {
+                length = _text_file.find(' ');
+                _text_file.copy(buffer, length, 0);
+                buffer[length]= '\0';
+                _text_file.erase(0, length+1);
+                t = atoi(buffer);
+                temp_vector.push_back(t);
+            }
+            x.setNextQuestions(temp_vector);
+        }
+        else
+        {
+            cerr << "error";
         }
 
-    while (!_starting_file.eof()){
-
-                getline(_starting_file, _text_file,' ');
-                            if (_text_file.compare("[Q]") == 0)
-                                {
-                                    Question x;
-                                    getline(_starting_file, _text_file, ' ');
-                                    t = atoi(_text_file.c_str());
-                                    x.setQuestionID(t);
-
-                                    getline(_starting_file, _text_file, ' ');
-                                    t = atoi(_text_file.c_str());
-                                    x.setNumberOfAnswers(t);
-                                    _number_of_answers = t;
-
-                                    getline(_starting_file, _text_file, '\n');
-                                    x.setQuestionText(_text_file);
-
-                                    it = questions.end();
-                                    questions.insert(it, x);
-
-                                }
-                            else if(_text_file.compare("[A]") == 0)
-                            {
-                                getline(_starting_file, _text_file, '\n');
-                                _text_file.push_back(' ');
-
-
-                                length = _text_file.find(' ');
-                                _text_file.copy(buffer, length, 0);
-                                buffer[length]= '\0';
-
-                                _text_file.erase(0, length+1);
-                                t = atoi(buffer);
-                                cout << "answer id: " << t << endl;
-
-                                //cout << t << " ";
-
-
-                                //cout << "-" << _text_file << "-" << endl;
-                                //cout << "_text_file length: " << _text_file.length() << endl;
-
-                                while(_text_file.length() !=0 && _text_file.find(' ') != -1 )
-                                {
-
-                                    length = _text_file.find(' ');
-                                    _text_file.copy(buffer, length, 0);
-                                    buffer[length]= '\0';
-                                    _text_file.erase(0, length+1);
-                                    t = atoi(buffer);
-
-
-                                    cout << "    next question: " << t << endl;
-
-
-
-                                    //cout << "_text_file length: " << _text_file.length() << endl;
-                                    //cout << _text_file.find(' ') << endl;
-
-
-                                }
-                                        cout << endl;
-                                }
-
-
-                            else
-                            {
-                                cerr << "error";
-                            }
-
-            *it++;
-            //cout << endl;
+        it = questions.end();
+        questions.insert(it, x);
+        *it++;
 
     }
     _starting_file.close();
