@@ -60,3 +60,12 @@ int Question::getNumberOfAnswers()
 {
     return _number_of_answers;
 }
+
+void Question::printAnswers()
+{
+    vector<int>::iterator it_ans;
+    for (it_ans = _answers_id.begin(); it_ans != _answers_id.end(); it_ans++)
+    {
+        cout << (*it_ans) << endl;
+    }
+}

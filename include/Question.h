@@ -26,6 +26,8 @@ class Question
         int getNumberOfAnswers();
         int getAnswer();
 
+        void printAnswers();
+
 
     protected:
 

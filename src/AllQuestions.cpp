@@ -86,16 +86,16 @@ void AllQuestions::initializeList()
         *it++;
 
     }
+    x.printAnswers();
     _starting_file.close();
 
 }
 void AllQuestions::printList()
 {
-    it = questions.begin();
     /*
-    for (; it != questions.end(); it++)
+    for (it = questions.begin(); it != questions.end(); it++)
     {
         cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
-    } */
+    }  */
 
 }
