@@ -7,10 +7,8 @@
 #include <iostream>
 #include <list>
 #include <fstream>
-#include <string>
-#include <vector>
-#include <iterator>
-#include <algorithm>
+
+
 
 #include "Question.h"
 

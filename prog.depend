@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1499426124 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+1499553995 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
 	"coda.h"
 	"Question.h"
 	"AllQuestions.h"
 	"Answer.h"
+	"AllAnswers.h"
 
 1498210006 c:\users\alberto\documents\github\progetto_algoritmi\include\coda.h
 	<vector>
@@ -12,14 +13,14 @@
 	<algorithm>
 	<fstream>
 
-1499158145 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+1499538697 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
 	<list>
 	<vector>
 	<iterator>
 	<algorithm>
 
-1499438065 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
+1499553427 c:\users\alberto\documents\github\progetto_algoritmi\include\allquestions.h
 	<string>
 	<vector>
 	<iterator>
@@ -27,15 +28,10 @@
 	<iostream>
 	<list>
 	<fstream>
-	<string>
-	<vector>
-	<iterator>
-	<algorithm>
 	"Question.h"
 
-1499444087 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1499553996 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
-	"NextAnswer.h"
 	<iostream>
 	<fstream>
 	<ctype.h>
@@ -51,7 +47,7 @@
 	<ctype.h>
 	<string>
 
-1499158145 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+1499538697 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>
@@ -66,10 +62,17 @@
 1499425232 source:c:\users\alberto\documents\github\progetto_algoritmi\src\answer.cpp
 	"Answer.h"
 
-1499425278 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allanswers.cpp
+1499553859 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allanswers.cpp
 	"AllAnswers.h"
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+	<vector>
+	<iterator>
+	<algorithm>
 
-1499426010 c:\users\alberto\documents\github\progetto_algoritmi\include\allanswers.h
+1499426317 c:\users\alberto\documents\github\progetto_algoritmi\include\allanswers.h
 	<string>
 	<fstream>
 	<iterator>

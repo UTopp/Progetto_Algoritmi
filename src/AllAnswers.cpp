@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <ctype.h>
 #include <string>
 #include <vector>
 #include <iterator>
@@ -28,17 +29,34 @@ void AllAnswers::initializeList()
                     cerr<<"ERROR! This file does not exist."<<endl;
                         exit(EXIT_FAILURE);
                 }
-
+    Answer ansobject;
+    int t;
 
      while (!_starting_file.eof()){
 
-                getline(_starting_file, _text_file,' ');
 
+                        getline(_starting_file, _text_file, ' ');
+                        t = atoi(_text_file.c_str());
+                        ansobject.setAnswerID(t);
+
+                        getline(_starting_file, _text_file, '\n');
+                        ansobject.setAnswerText(_text_file);
+
+                        it = answers.end();
+                        answers.insert(it, ansobject);
+                        *it++;
+                    }
+
+
+            _starting_file.close();
 
      }
-}
+
 
 void AllAnswers::printList()
 {
-
+         for (it = answers.begin(); it != answers.end(); it++)
+    {
+        cout << (*it).getAnswerID() << " " << (*it).getAnswerText() <<  endl;
+    }
 }
