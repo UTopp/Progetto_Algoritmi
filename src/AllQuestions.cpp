@@ -21,7 +21,7 @@ AllQuestions::~AllQuestions()
 }
 void AllQuestions::initializeList()
 {
-    int t, length;
+    int t, length, i;
     char buffer[10];
     Question x;
     vector<int> temp_vector;
@@ -52,27 +52,27 @@ void AllQuestions::initializeList()
             getline(_starting_file, _text_file, '\n');
             x.setQuestionText(_text_file);
 
-        }
-        else if(_text_file.compare("[A]") == 0)
-        {
-
-            getline(_starting_file, _text_file, '\n');
-            _text_file.push_back(' ');
-            length = _text_file.find(' ');
-            _text_file.copy(buffer, length, 0);
-            buffer[length]= '\0';
-            _text_file.erase(0, length+1);
-            t = atoi(buffer);
-            x.setAnswer(t);
-
-            while(_text_file.length() !=0)
+            for(i=0; i<_number_of_answers; i++)
             {
+                getline(_starting_file, _text_file,' ');
+                getline(_starting_file, _text_file, '\n');
+                _text_file.push_back(' ');
                 length = _text_file.find(' ');
                 _text_file.copy(buffer, length, 0);
                 buffer[length]= '\0';
                 _text_file.erase(0, length+1);
                 t = atoi(buffer);
-                temp_vector.push_back(t);
+                x.setAnswer(t);
+
+                while(_text_file.length() !=0)
+                {
+                    length = _text_file.find(' ');
+                    _text_file.copy(buffer, length, 0);
+                    buffer[length]= '\0';
+                    _text_file.erase(0, length+1);
+                    t = atoi(buffer);
+                    temp_vector.push_back(t);
+                }
             }
             x.setNextQuestions(temp_vector);
         }

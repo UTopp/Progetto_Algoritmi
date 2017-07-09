@@ -34,11 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/AllAnswers.h" />
 		<Unit filename="include/AllQuestions.h" />
 		<Unit filename="include/Answer.h" />
 		<Unit filename="include/Question.h" />
 		<Unit filename="include/coda.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AllAnswers.cpp" />
 		<Unit filename="src/AllQuestions.cpp" />
 		<Unit filename="src/Answer.cpp" />
 		<Unit filename="src/Question.cpp" />
