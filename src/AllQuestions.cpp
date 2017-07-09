@@ -84,6 +84,7 @@ void AllQuestions::initializeList()
 
 
             }
+<<<<<<< HEAD
 
             it = questions.end();
         questions.insert(it, x);
@@ -92,12 +93,21 @@ void AllQuestions::initializeList()
 
 
 
+=======
+            x.setNextQuestions(temp_vector);
+            it = questions.end();
+            questions.insert(it, x);
+>>>>>>> 48217296f2506e751a467084db91683496383816
         }
         else
         {
             cerr << "error";
         }
+<<<<<<< HEAD
 
+=======
+        *it++;
+>>>>>>> 48217296f2506e751a467084db91683496383816
 
     }
     //x.printAnswers();

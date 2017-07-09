@@ -26,9 +26,14 @@ int main()
     q.initializeList();
     q.printList();
 
+<<<<<<< HEAD
+=======
+    /*
+>>>>>>> 48217296f2506e751a467084db91683496383816
     a.initializeList();
-    a.printList();
+    a.printList(); */
 
-
+    cout << "checkList:" << endl;
+    q.checkList();
     return 0;
 }
