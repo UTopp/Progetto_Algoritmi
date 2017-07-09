@@ -26,10 +26,11 @@ int main()
     q.initializeList();
     q.printList();
 
-
+    /*
     a.initializeList();
-    a.printList();
+    a.printList(); */
 
-
+    cout << "checkList:" << endl;
+    q.checkList();
     return 0;
 }

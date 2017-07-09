@@ -145,7 +145,7 @@
 	<list>
 	<vector>
 
-1499595724 source:c:\users\umberto\documents\github\progetto_algoritmi\main.cpp
+1499601735 source:c:\users\umberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
 	"coda.h"
 	"Question.h"
@@ -166,7 +166,7 @@
 	<iterator>
 	<algorithm>
 
-1499595724 c:\users\umberto\documents\github\progetto_algoritmi\include\allquestions.h
+1499597903 c:\users\umberto\documents\github\progetto_algoritmi\include\allquestions.h
 	<string>
 	<vector>
 	<iterator>
@@ -219,7 +219,7 @@
 	<list>
 	"Answer.h"
 
-1499595724 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allanswers.cpp
+1499597440 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allanswers.cpp
 	"AllAnswers.h"
 	<iostream>
 	<fstream>
@@ -229,7 +229,7 @@
 	<iterator>
 	<algorithm>
 
-1499596404 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1499601874 source:c:\users\umberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
 	<iostream>
 	<fstream>
