@@ -84,10 +84,14 @@ void AllQuestions::initializeList()
 
 
             }
+
             it = questions.end();
         questions.insert(it, x);
         *it++;
         x.clearObj();
+
+
+
         }
         else
         {
@@ -95,12 +99,36 @@ void AllQuestions::initializeList()
         }
 
 
-
     }
     //x.printAnswers();
     _starting_file.close();
 
 }
+
+void AllQuestions::checkList()
+{
+    list<int> temp_list;
+    list<int>::iterator it_temp_list;
+    int size_before, size_after;
+
+    it_temp_list = temp_list.begin();
+    for(it = questions.begin(); it != questions.end(); ++it)
+    {
+        cout << (*it).getQuestionID() << endl;
+        temp_list.push_back((*it).getQuestionID());
+    }
+
+    size_before = temp_list.size();
+    temp_list.sort();
+    temp_list.unique();
+    size_after = temp_list.size();
+    if(size_before != size_after)
+    {
+        cerr << "Question File: SYNTAX ERROR";
+        exit(EXIT_FAILURE);
+    }
+}
+
 void AllQuestions::printList()
 {
 
