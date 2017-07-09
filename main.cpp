@@ -26,7 +26,6 @@ int main()
     q.initializeList();
     q.printList();
 
-
     a.initializeList();
     a.printList();
 

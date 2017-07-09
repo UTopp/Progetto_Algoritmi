@@ -26,8 +26,10 @@ class Question
         int getNumberOfAnswers();
         int getAnswer();
 
+        void printSingleAnswer();
         void printAnswers();
-
+        void printNextQuestions();
+        void clearObj();
 
     protected:
 

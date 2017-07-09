@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1499553995 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
+1499598740 source:c:\users\alberto\documents\github\progetto_algoritmi\main.cpp
 	<iostream>
 	"coda.h"
 	"Question.h"
@@ -13,7 +13,7 @@
 	<algorithm>
 	<fstream>
 
-1499538697 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
+1499609307 c:\users\alberto\documents\github\progetto_algoritmi\include\question.h
 	<string>
 	<list>
 	<vector>
@@ -30,7 +30,7 @@
 	<fstream>
 	"Question.h"
 
-1499553996 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
+1499608667 source:c:\users\alberto\documents\github\progetto_algoritmi\src\allquestions.cpp
 	"AllQuestions.h"
 	<iostream>
 	<fstream>
@@ -47,7 +47,7 @@
 	<ctype.h>
 	<string>
 
-1499538697 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
+1499609307 source:c:\users\alberto\documents\github\progetto_algoritmi\src\question.cpp
 	"Question.h"
 	<iostream>
 	<fstream>

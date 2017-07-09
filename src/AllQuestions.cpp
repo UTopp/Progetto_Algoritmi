@@ -66,36 +66,60 @@ void AllQuestions::initializeList()
 
                 while(_text_file.length() !=0)
                 {
+
                     length = _text_file.find(' ');
                     _text_file.copy(buffer, length, 0);
                     buffer[length]= '\0';
                     _text_file.erase(0, length+1);
                     t = atoi(buffer);
                     temp_vector.push_back(t);
+
                 }
+                if (!temp_vector.empty()){
+                     x.setNextQuestions(temp_vector);
+
+                }
+                temp_vector.clear();
+
+
+
             }
-            x.setNextQuestions(temp_vector);
+            it = questions.end();
+        questions.insert(it, x);
+        *it++;
+        x.clearObj();
         }
         else
         {
             cerr << "error";
         }
 
-        it = questions.end();
-        questions.insert(it, x);
-        *it++;
+
 
     }
-    x.printAnswers();
+    //x.printAnswers();
     _starting_file.close();
 
 }
 void AllQuestions::printList()
 {
-    /*
+
     for (it = questions.begin(); it != questions.end(); it++)
     {
         cout << (*it).getQuestionID() << " " << (*it).getNumberOfAnswers() << " " << (*it).getQuestionText() << endl;
-    }  */
+        cout <<"Risposte:" << endl;
+
+    (*it).printAnswers();
+
+    cout <<"Domande successive:" << endl;
+
+    (*it).printNextQuestions();
+
+
+    cout << endl << endl;
+    }
+
+
+
 
 }
