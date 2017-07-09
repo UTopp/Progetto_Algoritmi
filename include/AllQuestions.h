@@ -31,6 +31,7 @@ class AllQuestions
         virtual ~AllQuestions();
 
         void initializeList();
+        void checkList();
         void printList();
 
         list<Question> questions;
