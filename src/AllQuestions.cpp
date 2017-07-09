@@ -47,7 +47,7 @@ void AllQuestions::initializeList()
             getline(_starting_file, _text_file, ' ');
             t = atoi(_text_file.c_str());
             x.setNumberOfAnswers(t);
-            _number_of_answers = t;         // ???
+            _number_of_answers = t;
 
             getline(_starting_file, _text_file, '\n');
             x.setQuestionText(_text_file);
@@ -66,32 +66,23 @@ void AllQuestions::initializeList()
 
                 while(_text_file.length() !=0)
                 {
-
                     length = _text_file.find(' ');
                     _text_file.copy(buffer, length, 0);
                     buffer[length]= '\0';
                     _text_file.erase(0, length+1);
                     t = atoi(buffer);
                     temp_vector.push_back(t);
-
                 }
-                if (!temp_vector.empty()){
+                if (!temp_vector.empty())
+                {
                      x.setNextQuestions(temp_vector);
-
                 }
                 temp_vector.clear();
-
-
-
             }
-
             it = questions.end();
-        questions.insert(it, x);
-        *it++;
-        x.clearObj();
-
-
-
+            questions.insert(it, x);
+            *it++;
+            x.clearObj();
         }
         else
         {
